@@ -1,0 +1,45 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+body {
+     background-color: #101010;
+}
+body::selection {
+     background-color: transparent;
+}
+
+.title {
+     display: inline-block;
+     text-decoration: none;
+     color: rgb(199, 199, 199);
+     cursor: pointer;
+}
+
+.view-container {
+     width: 1400px;
+     margin: 0 auto;
+     text-align: justify;
+     font-family: sans-serif;
+     font-size: 35px;
+}
+
+.para {
+     height: 270px;
+     overflow: auto;
+     padding: 0 40px 10px 40px;
+     scrollbar-width: none;
+     line-height: 47px;
+}
+
+.input {
+     display: flex;
+     justify-content: center;
+}
+#input {
+     border: none;
+     background-color: #101010;
+     color: #101010;
+     outline: none;
+}

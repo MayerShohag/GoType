@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <title>Go Type</title>
+          <link rel="stylesheet" href="style.css" />
+          <link rel="stylesheet" href="./keyboard/keyboard.css" />
+     </head>
+     <body>
+          <section class="container">
+               <section class="view-container">
+                    <h1><a href="#" class="title">Go Type</a></h1>
+                    <section class="input">
+                         <input
+                              type="text"
+                              id="input"
+                              autofocus
+                              autocomplete="off"
+                         />
+                    </section>
+                    <p id="para" class="para"></p>
+               </section>
+
+               <section class="keyboard-container">
+                    <!-- row 1 -->
+                    <section class="row-1">
+                         <kbd class="btn" id="Backquote" accesskey="`">`~</kbd>
+                         <kbd class="btn" id="Digit1" accesskey="1">1</kbd>
+                         <kbd class="btn" id="Digit2" accesskey="2">2</kbd>
+                         <kbd class="btn" id="Digit3" accesskey="3">3</kbd>
+                         <kbd class="btn" id="Digit4" accesskey="4">4</kbd>
+                         <kbd class="btn" id="Digit5" accesskey="5">5</kbd>
+                         <kbd class="btn" id="Digit6" accesskey="6">6</kbd>
+                         <kbd class="btn" id="Digit7" accesskey="7">7</kbd>
+                         <kbd class="btn" id="Digit8" accesskey="8">8</kbd>
+                         <kbd class="btn" id="Digit9" accesskey="9">9</kbd>
+                         <kbd class="btn" id="Digit0" accesskey="0">0</kbd>
+                         <kbd class="btn" id="Minus" accesskey="-">-</kbd>
+                         <kbd class="btn" id="Equal" accesskey="=">=</kbd>
+                         <kbd class="btn backspace" id="Backspace"
+                              >backspace</kbd
+                         >
+                         <kbd class="btn" id="Slash" accesskey="/">/</kbd>
+                    </section>
+
+                    <!-- row 2 -->
+                    <section class="row-2">
+                         <kbd class="btn tabkey" id="Tab"
+                              >tab&LeftArrowRightArrow;</kbd
+                         >
+                         <kbd class="btn" id="KeyQ" accesskey="q">q</kbd>
+                         <kbd class="btn" id="KeyW" accesskey="w">w</kbd>
+                         <kbd class="btn" id="KeyE" accesskey="e">e</kbd>
+                         <kbd class="btn" id="KeyR" accesskey="r">r</kbd>
+                         <kbd class="btn" id="KeyT" accesskey="t">t</kbd>
+                         <kbd class="btn" id="KeyY" accesskey="y">y</kbd>
+                         <kbd class="btn" id="KeyU" accesskey="">u</kbd>
+                         <kbd class="btn" id="KeyI" accesskey="">i</kbd>
+                         <kbd class="btn" id="KeyO" accesskey="">o</kbd>
+                         <kbd class="btn" id="KeyP" accesskey="">p</kbd>
+                         <kbd class="btn" id="BracketLeft" accesskey="">[</kbd>
+                         <kbd class="btn" id="BracketRight" accesskey="">]</kbd>
+                         <kbd class="btn" id="Backslash" accesskey=""
+                              >&Backslash;</kbd
+                         >
+                         <kbd class="btn" id="NumpadMultiply" accesskey=""
+                              >*</kbd
+                         >
+                    </section>
+
+                    <!-- row 3 -->
+                    <section class="row-3">
+                         <kbd class="btn capskey" id="CapsLock" accesskey=""
+                              >Caps Lock</kbd
+                         >
+                         <kbd class="btn" id="KeyA" accesskey="">a</kbd>
+                         <kbd class="btn" id="KeyS" accesskey="">s</kbd>
+                         <kbd class="btn" id="KeyD" accesskey="">d</kbd>
+                         <kbd class="btn" id="KeyF" accesskey="">f</kbd>
+                         <kbd class="btn" id="KeyG" accesskey="">g</kbd>
+                         <kbd class="btn" id="KeyH" accesskey="">h</kbd>
+                         <kbd class="btn" id="KeyJ" accesskey="">j</kbd>
+                         <kbd class="btn" id="KeyK" accesskey="">k</kbd>
+                         <kbd class="btn" id="KeyL" accesskey="">l</kbd>
+                         <kbd class="btn" id="Semicolon" accesskey="">;</kbd>
+                         <kbd class="btn" id="Quote" accesskey="">"</kbd>
+                         <kbd class="btn leftenter" id="Enter" accesskey=""
+                              >enter</kbd
+                         >
+                         <kbd class="btn" id="NumpadAdd" accesskey="">+</kbd>
+                    </section>
+
+                    <!-- row 4 -->
+                    <section class="row-4">
+                         <kbd class="btn leftshift" id="ShiftLeft" accesskey=""
+                              >shift</kbd
+                         >
+                         <kbd class="btn" id="KeyZ" accesskey="">z</kbd>
+                         <kbd class="btn" id="KeyX" accesskey="">x</kbd>
+                         <kbd class="btn" id="KeyC" accesskey="">c</kbd>
+                         <kbd class="btn" id="KeyV" accesskey="">v</kbd>
+                         <kbd class="btn" id="KeyB" accesskey="">b</kbd>
+                         <kbd class="btn" id="KeyN" accesskey="">n</kbd>
+                         <kbd class="btn" id="KeyM" accesskey="">m</kbd>
+                         <kbd class="btn" id="Comma" accesskey="">,</kbd>
+                         <kbd class="btn" id="Period" accesskey="">.</kbd>
+                         <kbd class="btn" id="Slash" accesskey="">/</kbd>
+                         <kbd class="btn rightshift" id="ShiftRight" accesskey=""
+                              >shift</kbd
+                         >
+                         <kbd class="btn" id="ArrowUp" accesskey="">&uparrow;</kbd>
+                         <kbd class="btn" id="NumpadSubtract" accesskey="">-</kbd>
+                    </section>
+
+                    <!-- row 6 -->
+                    <section class="row-6">
+                         <kbd class="btn leftcontrol" id="ControlLeft" accesskey="">ctrl</kbd>
+                         <kbd class="btn" id="MetaLeft" accesskey="">win</kbd>
+                         <kbd class="btn" id="AltLeft" accesskey="">alt</kbd>
+                         <kbd class="btn spacebar" id="Space" accesskey="">space bar</kbd>
+                         <kbd class="btn" id="AltRight" accesskey="">alt</kbd>
+                         <kbd class="btn" id="ContextMenu" accesskey="">Menu</kbd>
+                         <kbd class="btn rightcontrol" id="ControlRight" accesskey="">ctrl</kbd>
+                         <kbd class="btn" id="ArrowLeft" accesskey="">&leftarrow;</kbd>
+                         <kbd class="btn" id="ArrowDown" accesskey="">&downarrow;</kbd>
+                         <kbd class="btn" id="ArrowRight" accesskey="">&rightarrow;</kbd>
+                    </section>
+               </section>
+          </section>
+
+          <script src="./script.js"></script>
+          <script src="./keyboard/index.js"></script>
+     </body>
+</html>
