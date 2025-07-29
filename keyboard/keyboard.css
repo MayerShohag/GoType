@@ -11,6 +11,7 @@
      justify-content: center;
      align-items: center;
      margin: 0 auto;
+     
 }
 .keyboard-container {
      width: 1100px;
@@ -67,12 +68,14 @@
 }
 .leftshift,
 .rightshift {
-     width: 135px;
+     width: 105px;
 }
 .spacebar {
      width: 455px;
 }
 
 .key-color {
-     background-color: aqua;
+     border: 1px solid gray;
+     background-color: gray;
+     color: black;
 }
