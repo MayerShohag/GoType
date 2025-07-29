@@ -1,7 +1,7 @@
 <h2>GoType</h2>
-<p>is a typing test website designed to help users to improve their typing speed and accuracy.</p>
+<p>GoType is a typing test website designed to help users to improve their typing speed and accuracy.</p>
 
-<p>\*\*\* GoType version 1.0 release date : 29 July 2025 <p>
+<p>GoType version 1.0 release date : 29 July 2025 <p>
 <ul>
       <li>There is smooth animation as each letter is written.</li>
       <li>The color of each correct letter will be white.</li>
