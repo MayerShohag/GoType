@@ -44,13 +44,37 @@ let Text = [
 
 const input = document.getElementById("input");
 const para = document.getElementById("para");
-
 let index = Math.floor(Math.random() * Text.length);
 let mainText;
 
 for (let i = 0; i < Text.length; i++) {
      mainText = Text[index];
 }
+
+let timerElement = document.querySelector("#timer");
+let timeLeft = 120;
+let timer;
+let isTestRunning = false;
+
+const startTimer = () => {
+     if (isTestRunning) return;
+     isTestRunning = true;
+
+     timer = setInterval(() => {
+          if (timeLeft <= 0) {
+               clearInterval(timer);
+               input.disabled = true;
+               showResult();
+          } else {
+               timeLeft--;
+               timerElement.textContent = `${Math.floor(timeLeft / 60)}:${(
+                    timeLeft % 60
+               )
+                    .toString()
+                    .padStart(2, "0")}`;
+          }
+     }, 1000);
+};
 
 const renderText = (userInput) => {
      const words = mainText.toLowerCase().split(" ");
@@ -76,7 +100,31 @@ const renderText = (userInput) => {
 };
 
 input.addEventListener("input", () => {
+     if (!isTestRunning) {
+          startTimer();
+     }
      renderText(input.value);
 });
 
 renderText("");
+
+const showResult = () => {
+     let typedText = input.value.trim();
+     let typedWords = typedText.split(/\s+/).filter((w) => w.length > 0);
+     let totalWords = typedWords.length;
+     let wpm = Math.round(totalWords / 2); 
+
+     let correctChars = 0;
+     let totalChars = mainText.length;
+     for (let i = 0; i < typedText.length; i++) {
+          if (typedText[i] === mainText[i]) {
+               correctChars++;
+          }
+     }
+     let accuracy = ((correctChars / totalChars) * 100).toFixed(2);
+
+     timerElement.innerHTML = `
+        <strong>Result:</strong><br>
+        WPM: ${wpm}<br>
+        Accuracy: ${accuracy}%`;
+};
