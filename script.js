@@ -52,7 +52,7 @@ for (let i = 0; i < Text.length; i++) {
 }
 
 let timerElement = document.querySelector("#timer");
-let timeLeft = 120;
+let timeLeft = 60;
 let timer;
 let isTestRunning = false;
 
@@ -86,9 +86,9 @@ const renderText = (userInput) => {
      for (let i = 0; i < mainText.length; i++) {
           if (fullText[i]) {
                if (fullText[i] === userChars[i]) {
-                    display += `<span style="color: white">${fullText[i]}</span>`;
+                    display += `<span style="color: white;">${fullText[i]}</span>`;
                } else if (userChars[i]) {
-                    display += `<span style="color: red; text-decoration: underline;">${fullText[i]}</span>`;
+                    display += `<span style="color: #dc3545; text-decoration: underline;">${fullText[i]}</span>`;
                } else {
                     display += `<span style="color: gray">${fullText[i]}</span>`;
                }
@@ -112,7 +112,8 @@ const showResult = () => {
      let typedText = input.value.trim();
      let typedWords = typedText.split(/\s+/).filter((w) => w.length > 0);
      let totalWords = typedWords.length;
-     let wpm = Math.round(totalWords / 2); 
+
+     let wpm = Math.round(totalWords / 2);
 
      let correctChars = 0;
      let totalChars = mainText.length;

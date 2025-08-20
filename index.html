@@ -6,14 +6,145 @@
                name="viewport"
                content="width=device-width, initial-scale=1.0"
           />
-          <title>Go Type</title>
+          <title>GoType | Type Your Future</title>
+          <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+          <!-- font font-awesome -->
+          <link
+               rel="stylesheet"
+               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+               integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+               crossorigin="anonymous"
+               referrerpolicy="no-referrer"
+          />
+
+          <!-- google fonts  -->
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+               href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+               rel="stylesheet"
+          />
+
+          <!-- main css  -->
           <link rel="stylesheet" href="style.css" />
+
+          <!-- keyboard css  -->
           <link rel="stylesheet" href="./keyboard/keyboard.css" />
      </head>
      <body>
+          <header class="header">
+               <section>
+                    <h1><a href="#" class="title">GoType</a></h1>
+               </section>
+               <section class="header-achieve-user">
+                    <section class="achieve-profile">
+                         <a href="./ranking/userRanking.html" class="achieve-profile__icon">
+                              <i class="fa-solid fa-trophy"></i>
+                              <span>0</span>
+                         </a>
+                    </section>
+                    <section class="user-profile">
+                         <a href="#" class="user-profile__icon">
+                              <i class="fa-solid fa-user"></i>
+
+                              <!-- form  -->
+                              <form action="" class="user-login-form">
+                                   <section class="Connect-us">
+                                        <h1 class="Login_title">Join Us</h1>
+                                        <p class="Login-quote">
+                                             Type Your Future
+                                        </p>
+                                   </section>
+
+                                   <section class="manualLogin">
+                                        <section>
+                                             <input
+                                                  type="text"
+                                                  placeholder="username"
+                                                  class="username loginInput"
+                                                  required
+                                             />
+                                        </section>
+                                        <section>
+                                             <input
+                                                  type="email"
+                                                  placeholder="email"
+                                                  class="useremail loginInput"
+                                                  required
+                                             />
+                                        </section>
+                                        <section>
+                                             <input
+                                                  type="password"
+                                                  placeholder="password"
+                                                  class="userpassword loginInput"
+                                                  required
+                                             />
+                                        </section>
+                                        <section>
+                                             <input
+                                                  type="submit"
+                                                  value="Login"
+                                                  class="userLogin loginInput"
+                                             />
+                                        </section>
+                                   </section>
+
+                                   <hr />
+                                   <span class="orSeparator">or</span>
+                                   <hr />
+
+                                   <section class="accountLogin">
+                                        <section>
+                                             <button
+                                                  class="google-account accountLogin__items"
+                                             >
+                                                  <i
+                                                       class="fa-brands fa-google"
+                                                       id="google"
+                                                  ></i>
+                                                  <span class="spanStyle"
+                                                       >Sign up with
+                                                       Google</span
+                                                  >
+                                             </button>
+                                        </section>
+                                        <section>
+                                             <button
+                                                  class="facebook-account accountLogin__items"
+                                             >
+                                                  <i
+                                                       class="fa-brands fa-facebook"
+                                                       id="facebook"
+                                                  ></i>
+                                                  <span class="spanStyle"
+                                                       >Sign up with
+                                                       Facebook</span
+                                                  >
+                                             </button>
+                                        </section>
+                                        <section>
+                                             <button
+                                                  class="Email-account accountLogin__items"
+                                             >
+                                                  <i
+                                                       class="fa-solid fa-envelope"
+                                                       id="email"
+                                                  ></i>
+                                                  <span class="spanStyle"
+                                                       >Sign up with Email</span
+                                                  >
+                                             </button>
+                                        </section>
+                                   </section>
+                              </form>
+                         </a>
+                    </section>
+               </section>
+          </header>
           <section class="container">
                <section class="view-container">
-                    <h1><a href="#" class="title">Go Type</a></h1>
                     <section class="input">
                          <input
                               type="text"
@@ -23,7 +154,7 @@
                          />
                     </section>
                     <section>
-                         <p id="timer">2:00</p>
+                         <p id="timer">1:00</p>
                     </section>
                     <section>
                          <p id="para" class="para"></p>

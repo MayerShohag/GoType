@@ -1,14 +1,17 @@
 <h2>GoType</h2>
 <p>GoType is a typing test website designed to help users to improve their typing speed and accuracy.</p>
 
-<p>GoType version 2.0 release date : 30 July 2025 <p>
+<p>GoType version 2.2.0 release date : 21 August 2025 <p>
 <ul>
-      <li>Less writing and new style in paragraphs.</li>
-      <li>New effects have been added to the letters on the keyboard.</li>
-      <li>If Caps Lock is pressed, it will give a warning whether it is on or off.</li>
-      <li>Paragraphs have been added for more writing.</li>
-      <li>The keyboard has been redesigned.</li>
+      <h2>GoType Website Features</h2>
+      <li>Brand & Tagline for GoType</li>
+      <li>User Onboarding / Sign Up Options</li>
+      <li>Keyboard Layout UI Improvments.</li>
+      <li>Landing Page Style Features</li>
+      <li>Minimal design (clean UI)</li>
+      <li>Centered Keyboard focus</li>
+      <li>Header + Call-to-action section</li>
 </ul>  
-<p>wait for update to improve something new!</p>
+<p>Wait for update to improve something new!</p>
 
 live link : https://gotypebyshohag.netlify.app/

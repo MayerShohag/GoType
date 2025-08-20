@@ -3,12 +3,29 @@
      padding: 0;
      box-sizing: border-box;
      scroll-behavior: smooth;
+     font-family: monospace;
+     text-decoration: none;
 }
+
+#timer {
+     color: gray;
+     padding-left: 80px;
+}
+
 body {
      background-color: #101010;
 }
 body::selection {
      background-color: transparent;
+     position: relative;
+}
+
+.Login_title {
+     font-size: 25px;
+     font-weight: bold;
+}
+.Login-quote {
+     font-size: 18px;
 }
 
 .title {
@@ -16,8 +33,8 @@ body::selection {
      text-decoration: none;
      color: rgb(199, 199, 199);
      cursor: pointer;
-     font-size: 40px;
-     padding: 0 30px;
+     font-size: 30px;
+     font-family: monospace;
 }
 
 .view-container {
@@ -26,12 +43,18 @@ body::selection {
      text-align: justify;
      font-family: sans-serif;
      font-size: 25px;
+     padding-top: 40px;
 }
-
+.orSeparator {
+     font-family: sans-serif;
+     text-align: center;
+     margin-bottom: 5px;
+     color: gray;
+}
 .para {
      height: 150px;
      overflow: auto;
-     margin: 30px;
+     margin: 10px 30px;
      padding: 0 50px;
      scrollbar-width: none;
      line-height: 47px;
@@ -48,3 +71,112 @@ body::selection {
      outline: none;
      text-decoration: none;
 }
+
+.header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-family: serif;
+     position: fixed;
+     width: 100%;
+     padding: 10px 30px;
+     background-color: #222;
+}
+
+.header-achieve-user {
+     display: flex;
+     align-items: center;
+     color: white;
+     gap: 15px;
+}
+
+.achieve-profile__icon,
+.user-profile__icon {
+     color: gray;
+     border: 1px solid gray;
+     border-radius: 50px;
+     padding: 7px;
+     font-size: 20px;
+}
+.achieve-profile__icon:hover,
+.user-profile__icon:hover {
+     color: white;
+     border: 1px solid white;
+     transition: 0.3s;
+     transform: scale(0.6);
+}
+
+.user-profile {
+     position: relative;
+}
+
+/* user login section starts */
+.user-login-form {
+     position: absolute;
+     left: -200px;
+     width: 250px;
+     top: 20px;
+     border: 1px solid #111;
+     display: none;
+     flex-direction: column;
+     margin: 10px;
+     border-radius: 5px;
+     padding: 10px;
+     background-color: #fff;
+}
+
+.user-profile:hover .user-login-form {
+     display: inline-flex;
+}
+
+.Connect-us {
+     text-align: center;
+     margin-bottom: 10px;
+     color: gray;
+}
+
+.manualLogin {
+     margin-bottom: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+.accountLogin {
+     margin-top: 10px;
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+}
+
+.loginInput,
+.accountLogin__items {
+     width: 100%;
+     border: 1px solid gray;
+     height: 30px;
+     padding: 0 10px 0 10px;
+     border-radius: 5px;
+}
+.google-account, .facebook-account, .Email-account{
+     background-color: #007bff;
+     border: #007bff;
+     color: white;
+}
+
+.spanStyle {
+     font-family: sans-serif;
+     text-align: center;
+}
+
+.userLogin {
+     cursor: pointer;
+     background-color: #007bff;
+     color: white;
+}
+
+.accountLogin__items {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     cursor: pointer;
+}
+/* user login section ends */
