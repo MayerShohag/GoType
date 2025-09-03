@@ -125,7 +125,7 @@ let wrongChars = 0;
 const showResult = () => {
      let totalTypesLetter = input.value.trim();
      totalLtterLength = totalTypesLetter.length;
-     wpm = totalLtterLength / 5 / 2;
+     wpm = totalLtterLength / 5 / 1;
 
      wrongChars = 0;
      currectChars = 0;
