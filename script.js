@@ -56,6 +56,14 @@ let timeLeft = 60;
 let timer;
 let isTestRunning = false;
 
+const stopTyping = () => {
+     if (isTestRunning) {
+          clearInterval(timer);
+          input.disabled = true;
+          showResult();
+     }
+};
+
 const startTimer = () => {
      if (isTestRunning) return;
      isTestRunning = true;
@@ -108,24 +116,37 @@ input.addEventListener("input", () => {
 
 renderText("");
 
+let wpm = 0;
+let accuracy = 0;
+let totalLtterLength = 0;
+let currectChars = 0;
+let wrongChars = 0;
+
 const showResult = () => {
-     let typedText = input.value.trim();
-     let typedWords = typedText.split(/\s+/).filter((w) => w.length > 0);
-     let totalWords = typedWords.length;
+     let totalTypesLetter = input.value.trim();
+     totalLtterLength = totalTypesLetter.length;
+     wpm = totalLtterLength / 5 / 2;
 
-     let wpm = Math.round(totalWords / 2);
-
-     let correctChars = 0;
-     let totalChars = mainText.length;
-     for (let i = 0; i < typedText.length; i++) {
-          if (typedText[i] === mainText[i]) {
-               correctChars++;
+     wrongChars = 0;
+     currectChars = 0;
+     for (let i = 0; i < totalLtterLength; i++) {
+          if (totalTypesLetter[i] !== mainText[i].toLowerCase()) {
+               wrongChars++;
+          } else {
+               currectChars++;
           }
      }
-     let accuracy = ((correctChars / totalChars) * 100).toFixed(2);
+
+     accuracy = (
+          ((totalLtterLength - wrongChars) / totalLtterLength) *
+          100
+     ).toFixed(2);
 
      timerElement.innerHTML = `
         <strong>Result:</strong><br>
         WPM: ${wpm}<br>
-        Accuracy: ${accuracy}%`;
+        Accuracy: ${accuracy}%<br>
+        KeyStrokes: ${totalLtterLength}<br> 
+        Incorrect Words : ${wrongChars}<br>
+        Correct Words: ${currectChars}<br>`;
 };

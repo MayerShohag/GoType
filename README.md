@@ -1,16 +1,12 @@
 <h2>GoType</h2>
 <p>GoType is a typing test website designed to help users to improve their typing speed and accuracy.</p>
 
-<p>GoType version 2.2.0 release date : 21 August 2025 <p>
+<p>GoType version 2.2.1.0 release date : 4 September 2025 <p>
 <ul>
       <h2>GoType Website Features</h2>
-      <li>Brand & Tagline for GoType</li>
-      <li>User Onboarding / Sign Up Options</li>
-      <li>Keyboard Layout UI Improvments.</li>
-      <li>Landing Page Style Features</li>
-      <li>Minimal design (clean UI)</li>
-      <li>Centered Keyboard focus</li>
-      <li>Header + Call-to-action section</li>
+      <li>Introducing Stop Button for better user experience. anytime user want to stop and view current result</li>
+      <li>New result experience</li>
+      <li>User can see Keystrocks, Correct or Incorrect Words</li>
 </ul>  
 <p>Wait for update to improve something new!</p>
 

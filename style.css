@@ -7,6 +7,16 @@
      text-decoration: none;
 }
 
+.container {
+     width: 1450px;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 0 auto;
+}
+
 #timer {
      color: gray;
      padding-left: 80px;
@@ -58,6 +68,7 @@ body::selection {
      padding: 0 50px;
      scrollbar-width: none;
      line-height: 47px;
+     outline: none;
 }
 
 .input {
@@ -156,7 +167,9 @@ body::selection {
      padding: 0 10px 0 10px;
      border-radius: 5px;
 }
-.google-account, .facebook-account, .Email-account{
+.google-account,
+.facebook-account,
+.Email-account {
      background-color: #007bff;
      border: #007bff;
      color: white;
@@ -180,3 +193,29 @@ body::selection {
      cursor: pointer;
 }
 /* user login section ends */
+
+.timerWithButton {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+.result-stopTimer{
+     display: flex;
+     gap: 10px;
+}
+.stopTimer {
+     display: flex;
+     padding: 10px;
+     border: #dc3545 2px solid;
+     background-color: transparent;
+     color: white;
+     font-size: 18px;
+     font-weight: bold;
+     outline: none;
+     cursor: pointer;
+     border-radius: 10px;
+}
+.stopTimer:hover,
+.stopTimer:focus {
+     background-color: #dc3545;
+}
