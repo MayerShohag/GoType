@@ -73,6 +73,7 @@ const startTimer = () => {
                clearInterval(timer);
                input.disabled = true;
                showResult();
+               alert(`Typers your time is up press View Result`);
           } else {
                timeLeft--;
                timerElement.textContent = `${Math.floor(timeLeft / 60)}:${(
@@ -94,7 +95,7 @@ const renderText = (userInput) => {
      for (let i = 0; i < mainText.length; i++) {
           if (fullText[i]) {
                if (fullText[i] === userChars[i]) {
-                    display += `<span style="color: white;">${fullText[i]}</span>`;
+                    display += `<span style="color: white; text-decoration: underline;">${fullText[i]}</span>`;
                } else if (userChars[i]) {
                     display += `<span style="color: #dc3545; text-decoration: underline;">${fullText[i]}</span>`;
                } else {
@@ -116,19 +117,19 @@ input.addEventListener("input", () => {
 
 renderText("");
 
-let wpm = 0;
-let accuracy = 0;
-let totalLtterLength = 0;
-let currectChars = 0;
-let wrongChars = 0;
+let wpmElement = document.querySelector("#wpmElement");
+let accuracyElement = document.querySelector("#accuracy");
+let keystrockElement = document.querySelector("#keystrock");
+let correct_wordsElement = document.querySelector("#correct_words");
+let wrong_wordsElement = document.querySelector("#wrong_words");
 
 const showResult = () => {
      let totalTypesLetter = input.value.trim();
-     totalLtterLength = totalTypesLetter.length;
-     wpm = totalLtterLength / 5 / 1;
+     let totalLtterLength = totalTypesLetter.length;
+     let wpm = totalLtterLength / 5 / 1;
 
-     wrongChars = 0;
-     currectChars = 0;
+     let wrongChars = 0;
+     let currectChars = 0;
      for (let i = 0; i < totalLtterLength; i++) {
           if (totalTypesLetter[i] !== mainText[i].toLowerCase()) {
                wrongChars++;
@@ -137,16 +138,14 @@ const showResult = () => {
           }
      }
 
-     accuracy = (
+     let accuracy = (
           ((totalLtterLength - wrongChars) / totalLtterLength) *
           100
      ).toFixed(2);
 
-     timerElement.innerHTML = `
-        <strong>Result:</strong><br>
-        WPM: ${wpm}<br>
-        Accuracy: ${accuracy}%<br>
-        KeyStrokes: ${totalLtterLength}<br> 
-        Incorrect Words : ${wrongChars}<br>
-        Correct Words: ${currectChars}<br>`;
+     wpmElement.innerHTML = `${wpm}`;
+     accuracyElement.innerHTML = `${accuracy}%`;
+     keystrockElement.innerHTML = `${totalLtterLength}`;
+     correct_wordsElement.innerHTML = `${currectChars}`;
+     wrong_wordsElement.innerHTML = `${wrongChars}`;
 };

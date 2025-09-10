@@ -163,14 +163,146 @@
                     <section class="timerWithButton">
                          <p id="timer">1:00</p>
                          <section class="result-stopTimer">
-                              <div>
-                                   <a class="stopTimer" href="./viewResult/index.html">
-                                        View Results
-                                   </a>
-                              </div>
-                              <button class="stopTimer" onclick="stopTyping()">
-                                   Stop
-                              </button>
+                              <section class="modal-box">
+                                   <button
+                                        popovertarget="view-result"
+                                        onclick="stopTyping()"
+                                        class="view-result-btn"
+                                   >
+                                        View Result
+                                   </button>
+                                   <section id="view-result" popover="hint">
+                                        <section class="typing-result">
+                                             <h1 class="typing-performane">
+                                                  Your Typing Performance
+                                             </h1>
+                                             <p class="result-paragraph">
+                                                  Good luck for your better
+                                                  typing experience
+                                             </p>
+                                        </section>
+                                        <hr />
+                                        <!-- modal section start from here -->
+                                        <section class="section-container">
+                                             <section
+                                                  class="wpm-section common-unit"
+                                             >
+                                                  <p
+                                                       class="section-common-span"
+                                                  >
+                                                       WPM is
+                                                  </p>
+                                                  <p
+                                                       class="section-common-result"
+                                                       id="wpmElement"
+                                                  >
+                                                       0
+                                                  </p>
+                                                  <span class="tips-span"
+                                                       >(Words Per Minute)</span
+                                                  >
+                                             </section>
+
+                                             <section
+                                                  class="accuracy-section common-unit"
+                                             >
+                                                  <p
+                                                       class="section-common-span"
+                                                  >
+                                                       Accuracy
+                                                  </p>
+                                                  <span
+                                                       class="section-common-result"
+                                                       id="accuracy"
+                                                       >0%</span
+                                                  ><br />
+                                                  <span class="tips-span"
+                                                       >(Focus Your
+                                                       Accuracy)</span
+                                                  >
+                                             </section>
+                                             <section
+                                                  class="ranking-section common-unit"
+                                             >
+                                                  <p
+                                                       class="section-common-span"
+                                                  >
+                                                       Ranking is
+                                                  </p>
+                                                  <p
+                                                       class="section-common-result"
+                                                       id="ranking"
+                                                  >
+                                                       0
+                                                  </p>
+                                                  <span class="tips-span"
+                                                       >(Global Ranking Position)</span
+                                                  >
+                                             </section>
+                                             <section
+                                                  class="keystrock-section common-unit"
+                                             >
+                                                  <p
+                                                       class="section-common-span"
+                                                  >
+                                                       Keystroke
+                                                  </p>
+                                                  <span
+                                                       class="section-common-result"
+                                                       id="keystrock"
+                                                       >0</span
+                                                  ><br />
+                                                  <span class="tips-span"
+                                                       >(How Much Key You
+                                                       Typed)</span
+                                                  >
+                                             </section>
+                                             <section
+                                                  class="correctWord-section common-unit"
+                                             >
+                                                  <p
+                                                       class="section-common-span"
+                                                  >
+                                                       Correct Words
+                                                  </p>
+                                                  <span
+                                                       class="section-common-result"
+                                                       id="correct_words"
+                                                       >0</span
+                                                  ><br />
+                                                  <span class="tips-span"
+                                                       >(Good Job!)</span
+                                                  >
+                                             </section>
+                                             <section
+                                                  class="incorrectWord-section common-unit"
+                                             >
+                                                  <p
+                                                       class="section-common-span"
+                                                  >
+                                                       Wrong Words
+                                                  </p>
+                                                  <span
+                                                       class="section-common-result"
+                                                       id="wrong_words"
+                                                       >0</span
+                                                  ><br />
+                                                  <span class="tips-span"
+                                                       >(You Missed!)</span
+                                                  >
+                                             </section>
+                                        </section>
+                                        <section class="result-btn_section">
+                                             <button
+                                                  class="result-btn"
+                                                  popovertarget="view-result"
+                                             >
+                                                  Close
+                                             </button>
+                                        </section>
+                                        <!-- modal section ends here -->
+                                   </section>
+                              </section>
                          </section>
                     </section>
                     <section>
